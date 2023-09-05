@@ -1,0 +1,34 @@
+slug = "formula"
+authors = ["Jane Doe <jane@uzh.ch>"]
+license = "CC BY 4.0"
+
+max_attempts = 10
+refill = 30
+max_points = 1
+
+[information.en]
+title = "Formula"
+instructions_file = "instructions_en.md"
+
+[evaluator]
+docker_image = "python:latest"
+run_command = "python task/script.py"
+test_command = "python -m unittest discover -v task"
+grade_command = "python -m unittest grading.tests"
+
+[files]
+visible = [
+  "task/script.py",
+  "task/tests.py",
+]
+editable = [
+  "task/script.py",
+  "task/tests.py",
+]
+grading = [
+  "grading/tests.py",
+]
+solution = [
+  "solution/script.py",
+]
+

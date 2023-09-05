@@ -1,0 +1,4 @@
+**/__pycache__/*
+**/__init__.py
+**/tests_generated.py
+**/grade_results.json

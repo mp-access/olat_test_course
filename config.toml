@@ -1,0 +1,26 @@
+slug = "olat_test_course"
+
+logo = "python.svg"
+
+"assignments" = [
+  "01_intro",
+  "02_basics",
+]
+
+[visibility]
+default = "hidden"
+override = "registered"
+override_start = 2023-01-01T13:00:00
+override_end = 2028-01-01T13:00:00
+
+[information.en]
+title = "OLAT Test course"
+description = "Course used for testing OLAT integration."
+university = "University of Zurich"
+period = "Available indefinitely"
+
+[global_files]
+grading = [
+  "universal/harness.py",
+]
+
